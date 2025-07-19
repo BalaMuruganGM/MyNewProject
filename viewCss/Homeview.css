@@ -1,0 +1,1407 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: "Plus Jakarta Sans", sans-serif; */
+    font-family: "Manrope", sans-serif;
+    /* font-family: "Sora", sans-serif;  ---> header kku use panrathu */
+
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+
+/* NavPar Style Start */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.navFirst {
+    display: flex;
+    width: 94%;
+    align-items: center;
+    padding: 10px 15px;
+    height: 80px;
+    /* border: 2px solid aqua; */
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+}
+
+.navNewBut {
+    width: 32%;
+    color: gray;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+    text-decoration: none;
+    color: gray;
+    cursor: pointer;
+}
+
+.navNewBut a {
+    cursor: pointer;
+}
+
+.newNavImg img{
+    width: 180px;
+    height:100%;
+}
+
+
+.navIcons {
+    width: 32%;
+    display: flex;
+    /* font-size:20px; */
+    color: gray;
+    gap: 30px;
+    justify-content: end;
+}
+
+.navIcons i {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid gray;
+}
+
+.newNavImg {
+    width: 32%;
+    display: flex;
+    justify-content: center;
+}
+
+/* responsive nave style start */
+
+.resIcon {
+    display: none !important;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    font-size: 16px;
+}
+
+.resIcon .xmarNav {
+    display: none;
+}
+
+
+
+.responsiveNav {
+    width: 40%;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 20px 30px 10px 20px;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    z-index: 1000;
+    transition: all 0.30s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.resCon {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.resCon i {
+    color: #333333;
+}
+
+.resCon a {
+    text-decoration: none;
+    color: black;
+}
+
+.resNumberTag {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.resNumberTag button {
+    width: 80px;
+    height: 30px;
+    border: unset;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+.resNumberTag img {
+    width: 100px;
+    height: 40px;
+}
+
+.responsiveNav {
+    display: none;
+}
+
+.navLine {
+    height: 1px;
+    width: 95%;
+    background-color: lightgray;
+}
+
+.updateresNave {
+    display: none;
+}
+
+/* nave response start */
+
+@media screen and (max-width:900px) {
+    nav {
+        display: none;
+    }
+
+    .resIcon {
+        display: flex !important;
+    }
+
+    .updateresNave {
+        display: flex;
+        width: 100%;
+        border-radius: 0px;
+        background-color: #fff;
+        margin-top: 0;
+        padding: 10px 25px 5px 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .updateresNave img {
+        width: 140px;
+        height:100px;
+    }
+
+    .responsiveNav {
+        display: flex;
+        left: -100%;
+        z-index: 1000;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+    .responsiveNav {
+        width: 60%;
+    }
+
+    .resNumberTag button {
+        width: 60px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .resNumberTag img {
+        width: 80px;
+        height: 30px;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    .responsiveNav {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .responsiveNav {
+        width: 70%;
+    }
+
+    .updateresNave {
+        padding: 10px 15px 5px 10px;
+    }
+
+    .updateresNave img {
+        width: 110px;
+        height: 60px;
+    }
+
+
+}
+
+@media screen and (max-width:400px) {
+    .responsiveNav {
+        width: 85%;
+        font-size: 18px;
+    }
+
+    .resNumberTag img {
+        width: 70px;
+        height: 28px;
+    }
+
+}
+
+/* nav response clouses */
+
+
+
+
+.viewContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    /* background-color: red; */
+    min-height: 100vh;
+}
+
+.viewImg {
+    width: 100%;
+    display: flex;
+    height: 350px;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.viewImg img {
+    width: 34%;
+    height: 100%;
+}
+
+.ViewContent {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    /* height: 150px; */
+    align-items: start;
+    /* padding: 0px 2%; */
+    margin-top: 5%;
+}
+
+.leftViewContent {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 37%;
+}
+
+
+.lineCode {
+    padding: 10px 0px;
+    border-bottom: 1px solid lightgray;
+    width: 85%;
+    align-items: center;
+    margin-top: -60px;
+    margin-bottom: 40px;
+}
+
+
+.leftViewContent .leftMainHead {
+    font-size: 28px;
+    font-family: "Sora", sans-serif;
+
+}
+
+.leftViewContent p {
+    font-size: 18px;
+}
+
+.LVCDbottom {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.rightViewBox {
+    background: linear-gradient(to left, #0038A7, #141652);
+    height: 180px;
+    align-items: flex-start;
+    padding: 10px 16px;
+    display: grid;
+    gap: 8px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+
+.rvBoxHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+    border: unset;
+    border-radius: 5px;
+}
+
+.rvBoxHeadImg {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding-top: 5px;
+}
+
+.rvBoxHeadImg img {
+    width: 90%;
+    height: 90%;
+}
+
+.rvBoxBody {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.rvB-1 {
+    border-radius: 10px;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.rvB-1 img {
+    width: 20px;
+    height: 20px;
+}
+
+.rvB-1 p {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    align-items: center;
+    font-size: 13px;
+}
+
+.rightViewContent {
+    /* width: 40%; */
+    display: flex;
+    min-height: 300px;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.rightViewContent button {
+    width: 300px;
+    height: 50px;
+    background-color: navy;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: unset;
+    border-radius: 25px;
+
+}
+
+
+.LVCD {
+    display: grid;
+    gap: 25px;
+
+}
+
+
+
+.LVCD-1,
+.LVCD-2,
+.LVCDbottom {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.LVCD-1 {
+    gap: 15px;
+}
+
+.LVCD-1IconCar h4,
+.LVCD-1IconBottom h4 {
+    font-size: 20px;
+}
+
+.LVCD-1IconCar,
+.LVCD-1IconBottom {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.LVCD-1 h1 {
+    font-size: 18px;
+    font-family: "Sora", sans-serif;
+}
+
+.LVCD p {
+    font-size: 18px;
+}
+
+.LVCDbottom-1,
+.LVCDbottom-2,
+.LVCDbottom-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    color: gray;
+}
+
+.LbottomPrimary p {
+    font-size: 18px;
+}
+
+
+.LVCD-2 h1 {
+    font-size: 18px;
+}
+
+
+
+
+/* ViewBody Start */
+
+.viewBody {
+    margin-top: -40px;
+    display: flex;
+    justify-content: start;
+    width: 85%;
+    padding: 10px 0px;
+}
+
+.leftViewBody {
+    width: 60%;
+    /* background-color: red; */
+}
+
+.carReview {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+
+.type-1,
+.type-2 {
+    display: grid;
+    gap: 30px;
+    width: 50%;
+    /* background-color: yellow; */
+}
+
+.type-2{
+    gap: 48px;
+}
+
+.r1Main,
+.r2main {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.r1Main p,
+.r1Main h3,
+.r2main p,
+.r2main h3 {
+    width: 50%;
+    font-size: 16px;
+
+}
+
+.r1Main p,
+.r2main p {
+    color: #333333;
+}
+
+/* feature Tag Start */
+
+.cutomerFeatureH1 {
+    margin: 40px 0px 20px 0px;
+    width: 100%;
+    font-family: "Sora", sans-serif;
+
+}
+
+.cutomerFeature {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -20px;
+}
+
+.cf {
+    width: 100px;
+    height: 120px;
+}
+
+.cf img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Feature Tag Closes */
+
+
+/* Car details is Start */
+
+.carDetails {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.carDetails h1 {
+    font-size: 25px;
+    font-family: "Sora", sans-serif;
+}
+
+.carPara {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.cardetails-Service {
+    padding: 20px 0px;
+}
+
+.cardetails-Service ul {
+    padding-left: 20px;
+}
+
+.carLine {
+    padding: 10px 0px;
+}
+
+.emtype ul {
+    padding-left: 20px;
+}
+
+.showNumber {
+    display: grid;
+    gap: 5px;
+    padding: 15px 0px;
+}
+
+.showNumber-1,
+.showNumber-2 {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.showNumber-1 p,
+.showNumber-2 p {
+    font-weight: 200;
+    color: #333333;
+}
+
+/* Car details clouses */
+/* ViewBody Clouses */
+
+
+/* view Bottom Satrt */
+
+.viewBottom {
+    margin:10px 0px 25px 0px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    /* position: relative; */
+}
+
+.viewBottom h1 {
+    width: 100%;
+    text-align: start;
+    /* padding: 0px 15px; */
+    font-family: "Sora", sans-serif;
+}
+
+.bottomBodyStoreBox{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    height: 320px;
+    overflow: hidden;
+    transition: all 0.30s;
+}
+
+.bottomBody {
+    /* width:100%; */
+    /* display: grid; */
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    justify-content: center;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    transition: all 0.30s;
+}
+
+
+.homeViewArrow{
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 35%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+    /* background-color:yellow; */
+}
+
+.homeViewArrow i{
+    color: white;
+    font-size: 30px;
+    font-weight:bold;
+    cursor: pointer;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+}
+
+.rightTag {
+    width: 310px;
+    height: 305px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    border: 1px solid lightgray;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.rightImgTag {
+    width: 400%;
+    height: 70%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    /* left: 0;
+        top: 0; */
+}
+
+.rightImgTag img {
+    width: 25%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.rightFirstImg {
+    z-index: 10;
+}
+
+
+.righTagContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    /* justify-content: space-between; */
+    padding: 0px 10px;
+}
+
+.rightC,
+.LeftC {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.rightC .CN {
+    font-size: 16px;
+    /* font-weight: bold;         */
+    color: #1D1C26;
+    font-size: 18px;
+}
+
+
+.rightC .rRS {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.LeftC {
+    justify-content: start;
+    gap: 10px;
+    font-size: 12px;
+    color: gray;
+}
+
+.rMonth {
+    margin-left: 15px;
+}
+
+.rightC p {
+    color: #1C1D26;
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+.leftC p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #1C1D26;
+}
+
+.LeftC {
+    font-size: 15px;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    gap: 10px;
+    color: gray;
+}
+
+
+.LeftC .leftCHead-1 {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.bottomButton {
+    width: 150px;
+    height: 45px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    border: unset;
+    border-radius: 20px;
+    background-color: navy;
+    margin-top: 5px;
+}
+
+.bottomButton a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+.formInformation {
+    display: none;
+}
+
+/* viewPage is clouses */
+/* Responsive start */
+
+
+@media screen and (max-width:1300px) {
+
+    .viewBottom {
+        width: 100%;
+    }
+
+    .viewBottom h1 {
+        padding: 0px 15px;
+    }
+
+    .viewBody {
+        width: 100%;
+        padding: 0px 15px;
+    }
+
+    .ViewContent {
+        width: 100%;
+        padding: 0px 15px;
+    }
+
+    .cutomerFeature {
+    margin-left:0px;
+}
+
+}
+
+
+@media screen and (max-width:1250px) {
+    /* .bottomBody {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+    } */
+}
+
+@media screen and (max-width:1150px) {
+
+    .leftViewBody {
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    .viewBottom {
+        width: 100%;
+        overflow: scroll;
+    }
+
+}
+
+
+@media screen and (max-width:1000px) {
+
+    .ViewContent {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .leftViewContent {
+        width: 70%;
+        height: 180px;
+    }
+
+    .rightViewContent {
+        width: 60%;
+    }
+
+    .rightViewBox {
+        width: 90%;
+    }
+
+    .viewImg {
+        height: 280px;
+    }
+
+    .type-1,
+    .type-2 {
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (max-width:900px) {
+.type-2{
+    gap:30px;
+}
+
+    .carReview {
+        flex-direction: column;
+    }
+
+
+    .carDetails h1 {
+        font-size: 20px;
+    }
+
+    .carPara {
+        font-size: 15px;
+    }
+
+    .carDetails {
+        font-size: 15px;
+    }
+
+    .cutomerFeature {
+        gap: 10px;
+    }
+
+    .cf {
+        width: 90px;
+        height: 110px;
+    }
+
+    .cf img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* .bottomBody {
+        grid-template-columns: auto auto;
+    } */
+
+    .viewImg {
+        height: 250px;
+    }
+
+    .lineCode {
+        margin-top: 0px;
+    }
+
+    .rightViewContent {
+        min-height: 250px;
+    }
+
+}
+
+
+@media screen and (max-width:700px) {
+    .cf {
+        width: 70px;
+        height: 90px;
+    }
+
+    .viewBottom h1 {
+        text-align: center;
+    }
+
+}
+
+
+@media screen and (max-width:800px) {
+    .rightViewBox {
+        width: 400px;
+    }
+
+    .leftViewContent {
+        width: 90%;
+    }
+
+    .viewImg {
+        height: 200px;
+    }
+
+
+}
+
+
+@media screen and (max-width:550px) {
+    .leftViewContent h3 {
+        font-size: 20px;
+    }
+
+    .leftViewContent p {
+        font-size: 15px;
+    }
+
+    .LVCD-1,
+    .LVCD-2,
+    .LVCDbottom {
+        font-size: 12px;
+    }
+
+    .LVCD-2 h1 {
+        font-size: 18px;
+    }
+
+
+
+    .LVCD-1 h1 {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .leftViewContent {
+        gap: 15px;
+    }
+
+    /* .bottomBody {
+        grid-template-columns: auto;
+    } */
+
+    .viewImg {
+        height: 180px;
+    }
+
+    .type-1,
+    .type-2 {
+        width: 100%;
+    }
+
+    .r1Main p,
+    .r1Main h3,
+    .r2main p,
+    .r2main h3 {
+        width: 50%;
+        font-size: 13px;
+
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    .rightViewBox {
+        width: 320px;
+        height: 160px;
+    }
+
+    .ViewContent {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    .rightViewContent {
+        margin-top: 50px;
+        margin-bottom: -20px;
+        min-height: 200px;
+    }
+
+    .rvBoxHead h4 {
+        font-size: 13px;
+    }
+
+    .rvBoxHeadImg {
+        width: 100px;
+        height: 40px;
+        border: unset;
+        border-radius: 5px;
+    }
+
+    .rvBoxHeadImg img {
+        width: 95%;
+        height: 95%;
+        padding-top: 5px;
+    }
+
+    .rvBoxBody {
+        height: 75px;
+    }
+
+    .rvB-1 {
+        width: 31%;
+        height: 100%;
+    }
+
+    .rvB-1 p {
+        gap: 2px;
+        font-size: 10px;
+    }
+
+
+    .rightViewContent button {
+        width: 200px;
+        height: 45px;
+        font-weight: 700;
+        font-size: 14px;
+        border-radius: 25px;
+
+    }
+
+    .leftViewContent {
+        height: 140px;
+    }
+
+    .cutomerFeatureH1 {
+        margin: 10px 0px;
+    }
+
+    .cutomerFeature {
+        gap: 10px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+
+    .viewImg {
+        height: 160px;
+    }
+
+
+    .viewBody,
+    .ViewContent {
+        padding: 0px 10px;
+    }
+
+     .leftViewContent {
+        gap: 30px;
+    }
+}
+
+
+@media screen and (max-width:400px) {
+    .leftViewContent h3 {
+        font-size: 17px;
+    }
+
+    .leftViewContent p {
+        font-size: 12px;
+    }
+
+    .LVCD-1,
+    .LVCD-2,
+    .LVCDbottom {
+        font-size: 10px;
+    }
+
+    .LVCD-2 h1 {
+        font-size: 16px;
+    }
+
+
+     .leftViewContent {
+        gap: 20px;
+    }
+    .ViewContent {
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .leftViewContent .leftMainHead {
+    font-size: 23px;
+}
+
+
+}
+
+
+@media screen and (max-width:350px) {
+    
+}
+
+/* Responsive closes*/
+
+
+/* footer page Start */
+/* footer is start */
+
+    .footerStoreBox{
+        width: 100%;
+        background-color: #333333;
+        display: flex;
+        justify-content: center;
+    }
+
+footer {
+    width:1420px;
+    background-color: #141652;
+    background-color: #333333;
+    min-height: 300px;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 20px 5%;
+    /* margin-top: 50px; */
+}
+
+.footerhead {
+    display: flex;
+    gap: 20px;
+    color: #cccccc;
+}
+
+.footerLine {
+    height: 2px;
+    margin: 20px 0px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.FooterContent {
+    display: flex;
+    justify-content: space-between;
+    color: #cccccc;
+    background-color: #333333;
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerTextHead {
+    color: #ffffff;
+    margin: 15px 0px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.footerSix {
+    /* margin-top: 8%; */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    background-color: #333333;
+
+}
+
+.footerSix img {
+    width: 180px;
+    height: 50px;
+}
+
+.footerSix p {
+    padding-left: 20px;
+}
+
+.footerLogos {
+    display: flex;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+.footerIcon {
+    font-size: 25px;
+    display: flex;
+    gap: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #cccccc;
+}
+
+/* footer is clouses */
+
+/* Resposive Start */
+
+
+/* footer Responsive Start */
+
+@media screen and (max-width:1300px) {
+    footer{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    footer {
+        padding: 20px 2%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .footerSix {
+        margin-top: 1%;
+    }
+
+    footer {
+        padding: 20px 6%;
+        min-height: 95vh;
+    }
+
+    .FooterContent {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        row-gap: 8%;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    .footerhead {
+        justify-content: center;
+    }
+
+
+    .footerhead a {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .FooterContent {
+        grid-template-columns: auto auto;
+        justify-content: center;
+        min-height: 50vh;
+    }
+
+    .footerhead a {
+        font-size: 10px;
+    }
+
+    .LogoPageHead {
+        line-height: 25px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .LogoPageHead {
+        font-size: 11px;
+    }
+
+    .aboutContant {
+        width: 98%;
+        /* margin-top: 80px; */
+        padding: 0px 0px 0px 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .footerhead {
+        display: none;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .LogoPageHead {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+
+}
+
+@media screen and (max-width:400px) {
+    .FooterContent {
+        grid-template-columns: auto;
+        row-gap: 2%;
+        min-height: 80vh;
+
+    }
+
+    .LogoPageHead {
+        font-size: 8px;
+        line-height: 14px;
+    }
+
+}
+
+@media screen and (max-width:325px) {
+    .aboutContant {
+        margin-top: 70px;
+    }
+}
+
+/* footer Responsive clouses */
+/* footer page clouses */
+/* Footer Page is Clouses */

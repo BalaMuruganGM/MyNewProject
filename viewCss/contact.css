@@ -1,0 +1,703 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* font-family: 'Plus Jakarta Sans', sans-serif;       */
+    font-family: "Manrope", sans-serif;
+    /* font-family: "Sora", sans-serif;  ---> header kku use panrathu */  
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+
+.contectContainer{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contectHead{
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+    align-items:center;
+    gap: 20px;
+    font-family: "Sora", sans-serif;
+}
+
+.contectHead i{
+    font-size: 50px;
+}
+
+.contecHeadText{
+    text-align: center;
+    line-height: 35px;
+}
+
+.contecHeadText h1{
+    font-size: 2.5rem;
+    font-family: "Sora", sans-serif;
+}
+
+.contecHeadText p{
+    font-size: 13px;
+}
+
+.contectPera{
+    width: 80%;
+    text-align: center;
+    font-weight: 600;
+    margin:1% 0px;
+}
+
+.contactBody{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height:50vh;
+    /* background-color: red; */
+    align-items:center;
+    margin-top:20px;
+    justify-content:space-between;
+
+}
+
+.cbOne{
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    width: 85%;
+    min-height:60vh;
+    
+}
+
+
+.cbOne-left , .cbOne-right , .cbTwo-right{
+    display:flex;
+    align-items: center;
+    /* height: 300px; */
+    gap: 30px;
+    width:550px;
+    /* background-color: red; */
+    line-height: 25px;
+}
+
+
+
+.cbOne-left img{
+    width: 150px;
+    height:100px; 
+}
+
+
+.cboneLC h1{
+    font-size:25px;    
+    font-family: "Sora", sans-serif;
+}
+
+.cboneLC p , .cboneRC p{
+    color:gray;
+}
+
+.cboneLC h2{
+    font-size: 18px;
+    font-family: "Sora", sans-serif;
+}
+
+.cboneLC h2 span{
+    color: gray;
+    font-family: "Sora", sans-serif;
+}
+
+.cboneLC h3 , .cboneRC h3{
+    font-size:15px;
+    font-family: "Sora", sans-serif;
+}
+
+.cboneLC h3 span , .cboneRC h3 span{
+    text-decoration: underline;
+    color: crimson;
+    font-family: "Sora", sans-serif;
+}
+
+.cbOne-right img{
+    width: 120px;
+    height:100px;
+}
+
+.cboneRC{
+    line-height: 30px;
+}
+
+.cboneRC h1{
+    font-weight: 300;
+    font-family: "Sora", sans-serif;
+}
+
+.cbTwoLC h1{
+    font-weight: 300;
+    font-size: 20px;
+    font-family: "Sora", sans-serif;
+}
+
+.cbTwoText{
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+.cbOne img , .cbTwo img{
+    width: 80px;
+}
+
+
+/* responses Start */
+
+@media screen and (max-width:1150px) {
+    .cbOne{
+        grid-template-columns: auto;
+        gap: 50px;
+        justify-content: center;
+        
+    }
+
+    .cbOne-left , .cbOne-right , .cbTwo-right{
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+    .contectHead{
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .cbOne img , .cbTwo img{
+        width: 60px;
+        height: 100px;
+    }
+
+    .cboneLC h1 , .cbOneRC h1{
+        font-size: 20px;
+    }
+
+    .cbTwoLC h2 , .cboneLC h2  , .cboneLC h2 span{
+        font-size: 15px;
+    }
+
+    .cboneRC h1 , .cbTwoRC h1{
+        font-size: 20px;
+    }
+
+
+    .cboneLC p , .cboneRC p{
+        font-size: 12px;
+    }
+
+    .cboneRC h3 span , .cboneLC h3 span{
+        font-size: 10px;
+    }
+}   
+
+@media screen and (max-width:400px) {
+    .cbOne img , .cbTwo img{
+        width: 50px;
+        height: 90px;
+    }
+
+    .cboneLC p , .cboneRC p{
+        font-size: 10px;
+    }
+
+    .cboneLC h1 , .cboneRC{
+        font-size: 18px;
+    }
+
+    .cboneLC .h2{
+        font-size: 13px;
+    }
+
+    .cboneLC h2 span{
+        font-size: 10px;
+    }
+
+    .cboneRC{
+        line-height: 20px;
+    }
+
+}
+
+
+/* NavPar Style Start */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.navFirst {
+    display: flex;
+    width: 94%;
+    align-items: center;
+    padding: 10px 15px;
+    height: 80px;
+    /* border: 2px solid aqua; */
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+}
+
+.navNewBut {
+    width: 32%;
+    color: gray;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+    text-decoration: none;
+    color: gray;
+    cursor: pointer;
+}
+
+.navNewBut a {
+    cursor: pointer;
+}
+
+.newNavImg img{
+    width: 180px;
+    height:100%;
+}
+
+.secondContact {
+    /* font-weight: 800; */
+    color: #E83A16;
+}
+
+.navIcons {
+    width: 32%;
+    display: flex;
+    /* font-size:20px; */
+    color: gray;
+    gap: 30px;
+    justify-content: end;
+}
+
+.navIcons i {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid gray;
+}
+
+.newNavImg {
+    width: 32%;
+    display: flex;
+    justify-content: center;
+}
+
+/* responsive nave style start */
+
+.resIcon {
+    display: none !important;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    font-size: 16px;
+}
+
+.resIcon .xmarNav {
+    display: none;
+}
+
+
+
+.responsiveNav {
+    width: 40%;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 20px 30px 10px 20px;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    z-index: 1000;
+    transition: all 0.30s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.resCon {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.resCon i {
+    color: #333333;
+}
+
+.resCon a {
+    text-decoration: none;
+    color: black;
+}
+
+.resNumberTag {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.resNumberTag button {
+    width: 80px;
+    height: 30px;
+    border: unset;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+
+.resNumberTag img {
+    width: 100px;
+    height: 40px;
+}
+
+.responsiveNav {
+    display: none;
+}
+
+.navLine {
+    height: 1px;
+    width: 95%;
+    background-color: lightgray;
+}
+
+.updateresNave {
+    display: none;
+}
+
+/* nave response start */
+
+@media screen and (max-width:900px) {
+    nav {
+        display: none;
+    }
+
+    .resIcon {
+        display: flex !important;
+    }
+
+    .updateresNave {
+        display: flex;
+        width: 100%;
+        border-radius: 0px;
+        background-color: #fff;
+        margin-top: 0;
+        padding: 10px 25px 5px 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .updateresNave img {
+        width: 140px;
+        height:100px;
+    }
+
+    .responsiveNav {
+        display: flex;
+        left: -100%;
+        z-index: 1000;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+    .responsiveNav {
+        width: 60%;
+    }
+
+    .resNumberTag button {
+        width: 60px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .resNumberTag img {
+        width: 80px;
+        height: 30px;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    .responsiveNav {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .responsiveNav {
+        width: 70%;
+    }
+
+    .updateresNave {
+        padding: 10px 15px 5px 10px;
+    }
+
+    .updateresNave img {
+        width: 110px;
+        height: 60px;
+    }
+
+
+}
+
+@media screen and (max-width:400px) {
+    .responsiveNav {
+        width: 85%;
+        font-size: 18px;
+    }
+
+    .resNumberTag img {
+        width: 70px;
+        height: 28px;
+    }
+
+}
+
+/* nav response clouses */
+
+
+
+
+  /* footer is start */
+      .footerStoreBox{
+        width: 100%;
+        background-color: #333333;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer{
+        width:1350px;
+        background-color:#141652;
+        background-color: #333333;
+        min-height: 300px;
+        text-transform: uppercase;
+        font-size: 15px;
+        padding: 20px 10px;
+        /* margin-top: 50px; */
+    }
+
+    .footerhead{
+        display: flex;
+        gap: 20px;
+        color: #cccccc;
+    }
+
+    .footerLine{
+        height: 2px;
+        margin: 20px 0px;
+        width: 100%;
+        background-color: lightgray;
+    }
+
+    .FooterContent{
+        display: flex;
+        justify-content: space-between;
+        color: #cccccc;
+        background-color: #333333;
+    }
+
+    .footerText{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footerTextHead{
+        color: #ffffff;
+        margin: 15px 0px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+
+    .footerSix{
+        margin-top:10px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items:start;
+        background-color: #333333;
+
+    }
+    .footerSix img{
+        width: 180px;
+        height: 50px;
+    }
+
+    .footerSix p{
+        /* padding-left: 20px; */
+          font-size: 15px;
+    }
+
+    .footerLogos{
+        display: flex;
+        /* font-size: 10px; */
+        /* font-weight: 600; */
+    }
+
+
+    .footerIcon{
+        font-size: 25px;
+        display: flex;
+        gap: 30px;
+    }
+
+    footer a{
+        text-decoration: none;
+        color: #cccccc;
+    }
+
+
+/* footer is clouses */
+
+
+/* footer Responsive Start */
+
+    @media screen and (max-width:1300px) {
+    footer{
+        width: 100%;
+    }
+}
+
+    
+    @media screen and (max-width:1100px) {
+        footer{
+            padding: 20px 2%;
+        }
+    }
+
+    @media screen and (max-width:1000px) {
+        .footerSix{
+            margin-top:1%;
+        }
+
+        footer{
+            padding: 20px 6%;
+            min-height: 95vh;
+        }
+
+        .FooterContent{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            row-gap: 8%;
+        }
+    }
+
+    @media screen and (max-width:850px){
+       
+        .footerhead{
+            justify-content: center;
+        }
+
+
+        .footerhead a{
+            font-size: 12px;
+        }
+        
+    }
+
+    @media screen and (max-width:700px) {
+        .FooterContent{
+            grid-template-columns: auto auto;
+            justify-content: center;
+            min-height: 50vh;
+        }
+
+        .footerhead a{
+            font-size: 10px;
+        }
+
+        .LogoPageHead{
+            line-height: 25px;
+            font-size:13px;
+        }        
+    }
+
+    @media screen and (max-width:550px) {
+            .LogoPageHead{
+                font-size: 11px;
+            }
+
+            .aboutContant{
+                width: 98%;
+                /* margin-top: 80px; */
+                padding: 0px 0px 0px 10px;
+            }
+    }
+
+    @media screen and (max-width:600px) {
+        .footerhead{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:450px) {
+        .LogoPageHead{
+            font-size: 10px;
+            line-height:16px;
+        }
+
+
+    }
+
+    @media screen and (max-width:400px) {
+        .FooterContent{
+            grid-template-columns: auto;
+            row-gap:2%;
+            min-height:80vh;
+            
+        }
+
+        .LogoPageHead{
+            font-size: 8px;
+            line-height:14px;
+        }
+
+    }
+
+    @media screen and (max-width:325px) {
+        .aboutContant{
+            margin-top: 70px;
+        }
+    }
+
+/* footer Responsive clouses */
